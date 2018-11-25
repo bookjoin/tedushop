@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace TeduShop.Data.Infrastructure
 {
-    interface IDbFactory
+    //Giao tiep giao tiep doi tuong enity
+    public interface IDbFactory : IDisposable
     {
+        TeduShopDbContext Init();
     }
 }
